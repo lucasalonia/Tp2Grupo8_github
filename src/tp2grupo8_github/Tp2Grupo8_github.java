@@ -40,36 +40,36 @@ public class Tp2Grupo8_github {
         reloj.setDia("Domingo");
         System.out.println("Dia inicial: " + reloj.getDia());
 
-        System.out.println("MENU");
-        System.out.println("1. Cuenta pasos.");
-        System.out.println("2. Consultar hora");
-        System.out.println("3. Consultar dia");
-        System.out.println("4. Incrementar Dia");
-        System.out.println("5. Incrementar Hora");
-        System.out.println("6. Decir hora");
-        System.out.println("7. Comer");
-        System.out.println("8. Limpiar pantalla");
-        System.out.println("9. Hablar");
-        System.out.println("10. Traducir frecuencia");
-        System.out.println("11. Salir");
-
+        
+        int opcion;
         boolean salir = true;
-        while (salir == true) {
-            int opcion = leer.nextInt();
+        while (salir) {
+            System.out.println("MENU");
+            System.out.println("1. Cuenta pasos.");
+            System.out.println("2. Consultar hora");
+            System.out.println("3. Consultar dia");
+            System.out.println("4. Incrementar Dia");
+            System.out.println("5. Incrementar Hora");
+            System.out.println("6. Decir hora");
+            System.out.println("7. Comer");
+            System.out.println("8. Limpiar pantalla");
+            System.out.println("9. Hablar");
+            System.out.println("10. Traducir frecuencia");
+            System.out.println("11. Salir");
+            opcion = leer.nextInt();
             switch (opcion) {
                 case 1:
-                    System.out.println("¿Que distancia recorrio");
+                    System.out.println("¿Que distancia recorrio?");
                     int distancia = leer.nextInt();
                     reloj.cuentaPasos(distancia);
-                    System.out.println(reloj.getPasos());
+                    System.out.println("Los pasos son "+reloj.getPasos());
                     break;
                 case 2:
-                    System.out.println("La hora es: ");
-                    reloj.getHora();
+                    System.out.println("La hora es: "+reloj.getHora());
+                    
                     break;
                 case 3:
-                    System.out.println("El dia es: ");
-                    reloj.getDia();
+                    System.out.println("El dia es: "+reloj.getDia());
                     break;
                 case 4:
                     reloj.incrementarDia();
@@ -86,13 +86,13 @@ public class Tp2Grupo8_github {
                     persona.comer();
                     break;
                 case 8:
-                    System.out.println("Pantalla");
+                    System.out.println("Pantalla limpia");
                     break;
                 case 9:
                     persona.hablar();
                     break;
                 case 10:
-                    System.out.println("La frecuencia es: " + reloj.frecuenciaAleatoria());
+                    System.out.println("La frecuencia es: " + reloj.frecuenciaAleatoria()+" bmp");
                     break;
                 case 11:
                     salir = false;
