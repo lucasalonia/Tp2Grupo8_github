@@ -9,9 +9,10 @@ package tp2grupo8_github;
  * @author Adriana
  */
 public class Reloj {
-    private int horas;
-    private int minutos;
-    private int segundos;
+    protected String hora;
+    protected String dia;
+    protected String modelo;
+    protected long numSerie ;
 
 //    public void setHora(int horas, int minutos, int segundos) {
 //        this.horas = horas;
@@ -19,49 +20,74 @@ public class Reloj {
 //        this.segundos = segundos;
 //    }
 
-    public int getHoras() {
-        return horas;
+    public String getHora() {
+        return hora;
     }
 
-    public void setHoras(int horas) {
-        this.horas = horas;
+    public void setHora(String hora) {
+        this.hora = hora;
     }
 
-    public int getMinutos() {
-        return minutos;
+    public String getDia() {
+        return dia;
     }
 
-    public void setMinutos(int minutos) {
-        this.minutos = minutos;
+    public void setDia(String dia) {
+        this.dia = dia;
     }
 
-    public int getSegundos() {
-        return segundos;
+    public String getModelo() {
+        return modelo;
     }
 
-    public void setSegundos(int segundos) {
-        this.segundos = segundos;
+    public void setModelo(String modelo) {
+        this.modelo = modelo;
     }
-    
-    
+
+    public long getNumSerie() {
+        return numSerie;
+    }
+
+    public void setNumSerie(long numSerie) {
+        this.numSerie = numSerie;
+    }
+
+ 
 
     public String mostrarHora() {
-        return String.format("%02d:%02d:%02d", horas, minutos, segundos);
+        return hora;
     }
 
-    
-    public void incrementarSegundo() {
-        this.segundos++;
-        if (this.segundos >= 60) {
-            this.segundos = 0;
-            this.minutos++;
-            if (this.minutos >= 60) {
-                this.minutos = 0;
-                this.horas++;
-                if (this.horas >= 24) {
-                    this.horas = 0;
-                }
-            }
+    public void incrementarDia(){
+        this.dia=dia.toLowerCase();
+        switch (this.dia) {
+            case "domingo":
+                this.dia="lunes";
+                break;
+            case "lunes":
+                this.dia="martes";
+                break;
+            case "martes":
+                this.dia="miercoles";
+                break;
+            case "miercoles":
+                this.dia="jueves";
+                break;
+            case "jueves":
+                this.dia="viernes";
+                break;
+            case "viernes":
+                this.dia="sabado";
+                break;
+            case "sabado":
+                this.dia="domingo";
+                break;
+            default:
+                System.out.println("Dia no especifica");
+                break;
         }
     }
+     public void incrementarHora(){
+         
+     }
 }

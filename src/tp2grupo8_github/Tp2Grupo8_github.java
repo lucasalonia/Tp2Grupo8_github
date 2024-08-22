@@ -26,6 +26,7 @@ public class Tp2Grupo8_github {
         double altura;
         System.out.println("¿Deseaa ingresar valores para la persona?.si/no. En el caso que sea negativa se llenaran con valores predeterminados. ");
         String confirmar = leer.nextLine();
+        
         if(confirmar.equalsIgnoreCase("si")||confirmar.equalsIgnoreCase("s")){
             System.out.println("Ingrese nombre de la persona:");
             nombre = leer.nextLine();
@@ -44,14 +45,17 @@ public class Tp2Grupo8_github {
             altura = 1.80;
         }
         
-//        int opcion = leer.
-//        switch (opcion) {
-//            case 1:
-//                
-//                break;
-//            default:
-//                throw new AssertionError();
-//        }
+        System.out.println("MENU");
+        System.out.println("1. Cuenta pasos.");
+        
+        
+        int opcion = leer.nextInt();
+        switch (opcion) {
+            case 1:
+                break;
+            default:
+                throw new AssertionError();
+        }
         
         
     }
