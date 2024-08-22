@@ -14,6 +14,7 @@ public class RelojFit extends Reloj {
     public void cuentaPasos(int distancia){
         pasos=0;
         pasos=distancia*1333; //1 km equivale a 1333 pasos
+        System.out.println("Distancia recorrida "+distancia);
         
     }
     
