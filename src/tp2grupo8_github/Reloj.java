@@ -9,9 +9,9 @@ package tp2grupo8_github;
  * @author Adriana
  */
 public class Reloj {
-    protecte horas;
-    protecte minutos;
-    protecte segundos;
+    private int horas;
+    private int minutos;
+    private int segundos;
 
    
     public Reloj(int horas, int minutos, int segundos) {
