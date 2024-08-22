@@ -37,27 +37,57 @@ public class Tp2Grupo8_github {
             altura = 1.80;
         }
         
+        
         System.out.println("MENU");
         System.out.println("1. Cuenta pasos.");
-        System.out.println("2. Imcrementar Dia");
-        System.out.println("3. Imcrementar Hora");
-        System.out.println("4. Decir hora");        
-        System.out.println("5. Comer");       
-        System.out.println("6. Limpiar pantalla");
-        System.out.println("7. Hablar");
-        System.out.println("8. Traducir frecuencia");
-        System.out.println("9. Pulsaciones");
+        System.out.println("2. Setear hora");
+        System.out.println("3. Setear dias");
+        System.out.println("4. Incrementar Dia");
+        System.out.println("5. Incrementar Hora");
+        System.out.println("6. Decir hora");        
+        System.out.println("7. Comer");       
+        System.out.println("8. Limpiar pantalla");
+        System.out.println("9. Hablar");
+        System.out.println("10. Traducir frecuencia");
+        System.out.println("11. Salir");
         
-        
-        
-        int opcion = leer.nextInt();
-        switch (opcion) {
-            case 1:
-                break;
-            default:
-                throw new AssertionError();
+        boolean salir = true;
+        while(salir==true){
+            int opcion = leer.nextInt();
+            switch (opcion) {
+                case 1:
+                    break;
+                 case 2:
+                     System.out.println("¿Que hora es?");
+                     String hora=leer.nextLine();
+                    reloj.setHora(hora);
+                    break;
+                case 3:
+                    System.out.println("¿Que dias es?");
+                     String dia=leer.nextLine();
+                    reloj.setHora(dia);
+                    break;
+                case 4:
+                    break;
+                case 5:
+                    break;
+                case 6:
+                    break;
+                case 7:
+                    break;
+                case 8:
+                    break;
+                case 9:
+                    break;
+                case 10:
+                    break;
+               case 11:
+                   salir=false;
+                    break;      
+                default:
+                    throw new AssertionError();
+            }
         }
-        
         
     }
     
