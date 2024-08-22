@@ -23,8 +23,9 @@ public class Persona {
         //this.unReloj = unReloj;
     }
 
-
-
+    public Persona() {
+    }
+    
     public String getNombre() {
         return nombre;
     }
