@@ -83,11 +83,13 @@ public class Reloj {
                 this.dia="domingo";
                 break;
             default:
-                System.out.println("Dia no especifica");
+                System.out.println("No especifica dia");
                 break;
         }
     }
      public void incrementarHora(){
-         
+         int hora = Integer.parseInt(this.hora);
+         hora=hora+1;
+         this.hora=String.valueOf(hora);
      }
 }
