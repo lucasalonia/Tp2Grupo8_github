@@ -36,7 +36,11 @@ public class Tp2Grupo8_github {
             edad = 48;
             altura = 1.80;
         }
+        reloj.setHora("16");
+        System.out.println("Hora inicial: "+reloj.getHora());
         
+        reloj.setHora("Domingo");
+        System.out.println("Dia inicial: "+reloj.getDia());
         
         System.out.println("MENU");
         System.out.println("1. Cuenta pasos.");
