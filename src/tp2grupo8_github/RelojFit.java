@@ -15,6 +15,6 @@ public class RelojFit extends Reloj {
         Random random = new Random();
         return 60 + random.nextInt(100);  // Frecuencia entre 60 y 159 bpm
     }
-    
+
     
 }

@@ -13,14 +13,12 @@ public class Persona extends Reloj {
      private String nombre, apellido;
     private int edad;
     private double altura;
-    private Reloj unReloj = null;
 
-    public Persona(String nombre, String apellido, int edad, double altura, Reloj unReloj) {
+    public Persona(String nombre, String apellido, int edad, double altura) {
         this.nombre = nombre;
         this.apellido = apellido;
         this.edad = edad;
         this.altura = altura;
-        this.unReloj = unReloj;
     }
 
     public Persona() {
@@ -44,7 +42,7 @@ public class Persona extends Reloj {
     public void hablar() {
             System.out.println("Hola como te encuentras ");
     }
-        public void decirHora() {
+        public void decirHora(Reloj unReloj) {
         if (unReloj != null) {
             System.out.println("La hora es: " + unReloj.mostrarHora());
         } else {
