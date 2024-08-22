@@ -37,7 +37,7 @@ public class Tp2Grupo8_github {
         reloj.setHora("16");
         System.out.println("Hora inicial: " + reloj.getHora());
 
-        reloj.setHora("Domingo");
+        reloj.setDia("Domingo");
         System.out.println("Dia inicial: " + reloj.getDia());
 
         System.out.println("MENU");
