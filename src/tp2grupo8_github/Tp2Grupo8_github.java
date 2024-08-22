@@ -60,8 +60,8 @@ public class Tp2Grupo8_github {
                 case 1:
                     System.out.println("¿Que distancia recorrio");
                     int distancia = leer.nextInt();
-                    leer.nextLine();
                     reloj.cuentaPasos(distancia);
+                    reloj.getPasos();
                     break;
                 case 2:
                     System.out.println("La hora es: ");
