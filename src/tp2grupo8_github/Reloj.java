@@ -87,7 +87,39 @@ public class Reloj {
                 break;
         }
     }
-     public void incrementarHora(){
-         
-     }
+//     public void incrementarHora(){
+//         int hora = Integer.parseInt(this.hora);
+//         hora=hora++;
+//         this.hora = String.valueOf(hora);
+//     }
+//    if (0<=hora<=7){
+//            System.out.println("buenas noches");
+//                    
+//    }else if (8<=hora<=12){
+//            System.out.println("buen dia");
+//            
+//    }else if (13<=horas<=23){
+//            System.out.println("buenas tardes ");
+//}
+    
+        public void incrementarHora() {
+        // Convertir la hora de String a int
+        int horaInt = Integer.parseInt(this.hora);
+
+        // Incrementar la hora en 1
+        horaInt = (horaInt + 1) % 24; // Asegura que la hora se mantenga en el rango 0-23
+
+        // Convertir de nuevo la hora a String
+        this.hora = String.format("%02d", horaInt); // Formato de dos dígitos (ej: "09" en vez de "9")
+
+        // Saludar según la hora del día
+        if (horaInt >= 0 && horaInt <= 7) {
+            System.out.println("Buenas noches");
+        } else if (horaInt >= 8 && horaInt <= 12) {
+            System.out.println("Buen día");
+        } else if (horaInt >= 13 && horaInt <= 23) {
+            System.out.println("Buenas tardes");
+        }
+    }
+    
 }
