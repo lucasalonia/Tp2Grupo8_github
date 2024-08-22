@@ -58,8 +58,14 @@ public class Tp2Grupo8_github {
                 case 1:
                     break;
                  case 2:
+                     System.out.println("¿Que hora es?");
+                     String hora=leer.nextLine();
+                    reloj.setHora(hora);
                     break;
                 case 3:
+                    System.out.println("¿Que dias es?");
+                     String dia=leer.nextLine();
+                    reloj.setHora(dia);
                     break;
                 case 4:
                     break;
