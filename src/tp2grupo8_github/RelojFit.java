@@ -8,6 +8,8 @@ import java.util.Random;
 
 
 public class RelojFit extends Reloj {
+
+    
     
     public int frecuenciaAleatoria() {
         Random random = new Random();
