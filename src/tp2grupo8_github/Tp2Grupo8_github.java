@@ -1,20 +1,12 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Main.java to edit this template
- */
+
 package tp2grupo8_github;
 
 import java.util.Scanner;
 
-/**
- *
- * @author salon
- */
+
 public class Tp2Grupo8_github {
 
-    /**
-     * @param args the command line arguments
-     */
+    
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         
@@ -47,6 +39,15 @@ public class Tp2Grupo8_github {
         
         System.out.println("MENU");
         System.out.println("1. Cuenta pasos.");
+        System.out.println("2. Imcrementar Dia");
+        System.out.println("3. Imcrementar Hora");
+        System.out.println("4. Decir hora");        
+        System.out.println("5. Comer");       
+        System.out.println("6. Limpiar pantalla");
+        System.out.println("7. Hablar");
+        System.out.println("8. Traducir frecuencia");
+        System.out.println("9. Pulsaciones");
+        
         
         
         int opcion = leer.nextInt();
