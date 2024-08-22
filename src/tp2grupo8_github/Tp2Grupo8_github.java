@@ -24,7 +24,7 @@ public class Tp2Grupo8_github {
         String apellido;
         int edad;
         double altura;
-        System.out.println("¿Desea ingresar valores para la persona?.si/no. En el caso que sea negativa se llenaran con valores predeterminados. ");
+        System.out.println("¿Deseaa ingresar valores para la persona?.si/no. En el caso que sea negativa se llenaran con valores predeterminados. ");
         String confirmar = leer.nextLine();
         if(confirmar.equalsIgnoreCase("si")||confirmar.equalsIgnoreCase("s")){
             System.out.println("Ingrese nombre de la persona:");
