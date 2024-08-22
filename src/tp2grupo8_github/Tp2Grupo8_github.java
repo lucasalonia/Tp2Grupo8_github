@@ -18,8 +18,8 @@ public class Tp2Grupo8_github {
     public static void main(String[] args) {
         Scanner leer = new Scanner(System.in);
         
-//        Persona persona = new Persona();
-//        RelojFit reloj = new RelojFit();
+        Persona persona = new Persona();
+        RelojFit reloj = new RelojFit();
         String nombre;
         String apellido;
         int edad;
