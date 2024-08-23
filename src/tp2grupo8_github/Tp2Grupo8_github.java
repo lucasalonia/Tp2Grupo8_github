@@ -31,7 +31,7 @@ public class Tp2Grupo8_github {
             nombre = "Humberto";
             apellido = "Velez";
             edad = 48;
-            altura = 1.80;
+            altura = 1.70;
         }
 
         reloj.setHora("16");
@@ -59,9 +59,12 @@ public class Tp2Grupo8_github {
             opcion = leer.nextInt();
             switch (opcion) {
                 case 1:
-                    System.out.println("¿Que distancia recorrio?");
-                    int distancia = leer.nextInt();
-                    reloj.cuentaPasos(distancia);
+                    System.out.println("Ingrese Coordenada X");
+                    int coordX = leer.nextInt();
+                    System.out.println("Ingrese Coordenada Y");
+                    int coordY = leer.nextInt(); 
+                    reloj.cuentaPasos(coordX, coordY, altura);
+                    
                     System.out.println("Los pasos son "+reloj.getPasos());
                     break;
                 case 2:
